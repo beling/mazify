@@ -1,4 +1,4 @@
-# typst-maze
+# maze
 
 Procedural maze generator for Typst with customizable start and finish cells.
 

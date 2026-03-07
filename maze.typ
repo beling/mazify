@@ -49,7 +49,7 @@
 ///   finish_cont: [🏁],
 /// )
 /// ```
-#let maze(cols, rows, width: 100%, height: 100%, seed: 0, start_cont: none, finish_cont: none) = layout(size => {
+#let maze(cols, rows, width: 100%, height: 100%, seed: 0, stroke: auto, start_cont: none, finish_cont: none) = layout(size => {
   let LL = calc.min(
     if type(width) == ratio {
       size.width * width
@@ -134,7 +134,8 @@
           draw_line((c+1, r), (c+1, r+1))
         }
       }
-    }
+    },
+    stroke: stroke
   )),
   width: LL*cols, height: LL*rows)  // do we need this?
 })

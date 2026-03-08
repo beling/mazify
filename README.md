@@ -21,8 +21,7 @@ any two cells).
 #maze(
   12,
   8,
-  width: 10cm,
-  height: 6cm,
+  width: 10cm
 )
 ```
 
@@ -32,10 +31,10 @@ any two cells).
 #maze(
   10,
   10,
-  width: 8cm,
-  height: 8cm,
-  start_cont: [S],
-  finish_cont: [F],
+  width: 10cm,
+  seed: 123,
+  start_cont: [🚩],
+  finish_cont: [🏁],
   stroke: red
 )
 ```
@@ -74,9 +73,7 @@ maze(
 
 ## Algorithm
 
-The maze is generated using a depth-first search (DFS) backtracking algorithm,
-producing a *perfect maze*. The `seed` ensures deterministic generation: the
-same parameters always produce the same maze.
+The maze is generated using a depth-first search (DFS) backtracking algorithm, producing a *perfect maze*. The `seed` ensures deterministic generation: the same parameters always produce the same maze.
 
 ## License
 

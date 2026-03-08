@@ -7,9 +7,7 @@
 #maze(
   12,
   8,
-  width: 12cm,
-  height: 8cm,
-  seed: 42,
+  width: 10cm
 )
 
 == Red maze with Start and Finish Markers

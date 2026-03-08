@@ -69,8 +69,8 @@
   )
 
   let CR = cols * rows
-  let right = range(CR).map(_ => false) // we use only C-1 x R
-  let up = range(CR).map(_ => false) // we use only C x R-1
+  let right = range(CR).map(_ => false) // we use only cols-1 x rows
+  let up = range(CR).map(_ => false) // we use only cols x rows-1
 
   let index(c, r) = cols * r + c
   let min_max(n1, n2) = (calc.min(n1, n2), calc.max(n1, n2))
